@@ -7,26 +7,42 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://lambda-nvda-esp.github.io/</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:36:00Z</lastmod>
  </url>
  <url>
   <loc>https://lambda-nvda-esp.github.io/2017/</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://lambda-nvda-esp.github.io/a/bienvenidos-a-la-web-de-lambda-nvda-esp/</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lambda-nvda-esp.github.io/a/podcast-y-resena-sobre-lambda-con-nvda-en-el-sitio-web-de-la-comunidad-hispanohablante/</loc>
+  <lastmod>2017-05-24T16:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://lambda-nvda-esp.github.io/archive.html</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:36:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lambda-nvda-esp.github.io/authors/</loc>
+  <lastmod>2017-05-24T16:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lambda-nvda-esp.github.io/authors/ivan-novegil-a-partir-de-lo-publicado-por-salva-domenech-miguel-con-la-colaboracion-de-noelia-rm/</loc>
+  <lastmod>2017-05-24T16:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://lambda-nvda-esp.github.io/authors/ivan-novegil/</loc>
+  <lastmod>2017-05-24T16:37:00Z</lastmod>
  </url>
  <url>
   <loc>https://lambda-nvda-esp.github.io/categories/</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:35:00Z</lastmod>
  </url>
  <url>
   <loc>https://lambda-nvda-esp.github.io/p/about/</loc>
-  <lastmod>2017-05-24T16:04:00Z</lastmod>
+  <lastmod>2017-05-24T16:35:00Z</lastmod>
  </url>
 </urlset>
