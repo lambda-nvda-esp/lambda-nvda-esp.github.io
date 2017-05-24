@@ -5,12 +5,12 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1495644015.3361633
+_modified_time = 1495644289.4083474
 _enable_loop = True
 _template_filename = '/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/math_helper.tmpl'
 _template_uri = 'math_helper.tmpl'
 _source_encoding = 'ascii'
-_exports = ['math_styles_ifpost', 'math_scripts_ifpost', 'math_scripts', 'math_styles', 'math_styles_ifposts', 'math_scripts_ifposts']
+_exports = ['math_styles_ifposts', 'math_scripts_ifpost', 'math_scripts', 'math_styles', 'math_styles_ifpost', 'math_scripts_ifposts']
 
 
 def render_body(context,**pageargs):
@@ -29,14 +29,15 @@ def render_body(context,**pageargs):
         context.caller_stack._pop_frame()
 
 
-def render_math_styles_ifpost(context,post):
+def render_math_styles_ifposts(context,posts):
     __M_caller = context.caller_stack._push_frame()
     try:
+        any = context.get('any', UNDEFINED)
         def math_styles():
             return render_math_styles(context)
         __M_writer = context.writer()
         __M_writer('\n')
-        if post.is_mathjax:
+        if any(post.is_mathjax for post in posts):
             __M_writer('    ')
             __M_writer(str(math_styles()))
             __M_writer('\n')
@@ -64,9 +65,9 @@ def render_math_scripts_ifpost(context,post):
 def render_math_scripts(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        mathjax_config = context.get('mathjax_config', UNDEFINED)
         use_katex = context.get('use_katex', UNDEFINED)
         katex_auto_render = context.get('katex_auto_render', UNDEFINED)
+        mathjax_config = context.get('mathjax_config', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if use_katex:
@@ -103,15 +104,14 @@ def render_math_styles(context):
         context.caller_stack._pop_frame()
 
 
-def render_math_styles_ifposts(context,posts):
+def render_math_styles_ifpost(context,post):
     __M_caller = context.caller_stack._push_frame()
     try:
-        any = context.get('any', UNDEFINED)
         def math_styles():
             return render_math_styles(context)
         __M_writer = context.writer()
         __M_writer('\n')
-        if any(post.is_mathjax for post in posts):
+        if post.is_mathjax:
             __M_writer('    ')
             __M_writer(str(math_styles()))
             __M_writer('\n')
@@ -123,9 +123,9 @@ def render_math_styles_ifposts(context,posts):
 def render_math_scripts_ifposts(context,posts):
     __M_caller = context.caller_stack._push_frame()
     try:
-        any = context.get('any', UNDEFINED)
         def math_scripts():
             return render_math_scripts(context)
+        any = context.get('any', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if any(post.is_mathjax for post in posts):
@@ -139,6 +139,6 @@ def render_math_scripts_ifposts(context,posts):
 
 """
 __M_BEGIN_METADATA
-{"uri": "math_helper.tmpl", "line_map": {"130": 42, "131": 43, "132": 44, "133": 44, "134": 44, "140": 134, "16": 0, "21": 28, "22": 34, "23": 40, "24": 46, "25": 52, "26": 58, "32": 48, "38": 48, "39": 49, "40": 50, "41": 50, "42": 50, "48": 36, "54": 36, "55": 37, "56": 38, "57": 38, "58": 38, "64": 1, "71": 1, "72": 2, "73": 3, "74": 5, "75": 6, "76": 9, "77": 9, "78": 13, "79": 14, "80": 18, "81": 19, "82": 20, "83": 21, "84": 21, "85": 21, "86": 22, "87": 23, "93": 30, "98": 30, "99": 31, "100": 32, "106": 54, "113": 54, "114": 55, "115": 56, "116": 56, "117": 56, "123": 42}, "filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/math_helper.tmpl", "source_encoding": "ascii"}
+{"uri": "math_helper.tmpl", "source_encoding": "ascii", "line_map": {"130": 42, "131": 43, "132": 44, "133": 44, "134": 44, "140": 134, "16": 0, "21": 28, "22": 34, "23": 40, "24": 46, "25": 52, "26": 58, "32": 54, "39": 54, "40": 55, "41": 56, "42": 56, "43": 56, "49": 36, "55": 36, "56": 37, "57": 38, "58": 38, "59": 38, "65": 1, "72": 1, "73": 2, "74": 3, "75": 5, "76": 6, "77": 9, "78": 9, "79": 13, "80": 14, "81": 18, "82": 19, "83": 20, "84": 21, "85": 21, "86": 21, "87": 22, "88": 23, "94": 30, "99": 30, "100": 31, "101": 32, "107": 48, "113": 48, "114": 49, "115": 50, "116": 50, "117": 50, "123": 42}, "filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/math_helper.tmpl"}
 __M_END_METADATA
 """

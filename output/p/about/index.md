@@ -13,7 +13,7 @@ Bienvenidos a la página web de la organización lambda-nvda-esp en GitHub.
 
 ## ¿Qué hacemos?
 
-conjunto de usuarios españoles de LAMBDA con NVDA o desarrolladores de Python centrados en la mejora y expansión del uso del editor matemático [LAMBDA](https://lambda-project.org) (Linear Access to Mathematics using Braille Display and Audio Synthesis) con el lector de pantalla gratuito y de código abierto [NVDA](https://nvaccess.org) (Non-visual Desktop Access) en el idioma español o los diferentes idiomas oficiales en España.
+conjunto de usuarios españoles de LAMBDA con NVDA o desarrolladores de Python centrados en la mejora y expansión del uso del editor matemático [LAMBDA](https://lambdaproject.org) (Linear Access to Mathematics using Braille Display and Audio Synthesis) con el lector de pantalla gratuito y de código abierto [NVDA](https://nvaccess.org) (Non-visual Desktop Access) en el idioma español o los diferentes idiomas oficiales en España.
 Este sitio servirá como tablón de anuncios y lugar para seguir las actualizaciones a las traducciones y ampliaciones a la tabla braille, debido a que tanto traductores como desarrolladores de la tabla braille estamos en esta organización de GitHub.
 
 ## Contacto
