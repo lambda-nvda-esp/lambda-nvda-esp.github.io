@@ -50,4 +50,4 @@ Para más información, consulta la sección "Leyendo Contenido Matemático" en 
 - [Proyecto Lambda](http://www.lambdaproject.org/home)
 - [Descargar Lambda](ftp://ftp.once.es/pub/utt/tiflosoftware/Miscelanea/LambdaSetup140.zip) (archivo del CIDAT)
 
-copiado del original en [https://nvdaes.github.io/Lambda-con-NVDA/].
+copiado del original en [https://nvdaes.github.io/Lambda-con-NVDA/]
