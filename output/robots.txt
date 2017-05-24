@@ -1,0 +1,4 @@
+Sitemap: https://lambda-nvda-esp.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: lambda-nvda-esp.github.io
