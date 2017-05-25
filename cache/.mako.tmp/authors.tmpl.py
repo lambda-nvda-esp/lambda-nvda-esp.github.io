@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1495709692.8684368
+_modified_time = 1495709808.2659652
 _enable_loop = True
 _template_filename = '/usr/lib64/python3.4/site-packages/nikola/data/themes/bootstrap3/templates/authors.tmpl'
 _template_uri = 'authors.tmpl'
@@ -30,8 +30,8 @@ def render_body(context,**pageargs):
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         def content():
             return render_content(context._locals(__M_locals))
-        hidden_authors = context.get('hidden_authors', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
+        hidden_authors = context.get('hidden_authors', UNDEFINED)
         items = context.get('items', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n\n')
@@ -50,8 +50,8 @@ def render_content(context,**pageargs):
     try:
         def content():
             return render_content(context)
-        hidden_authors = context.get('hidden_authors', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
+        hidden_authors = context.get('hidden_authors', UNDEFINED)
         items = context.get('items', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -76,6 +76,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/bootstrap3/templates/authors.tmpl", "line_map": {"64": 10, "65": 11, "66": 12, "27": 0, "68": 12, "37": 2, "70": 12, "71": 15, "42": 17, "77": 71, "48": 4, "67": 12, "69": 12, "57": 4, "58": 5, "59": 6, "60": 6, "61": 6, "62": 8, "63": 9}, "source_encoding": "utf-8", "uri": "authors.tmpl"}
+{"uri": "authors.tmpl", "source_encoding": "utf-8", "line_map": {"64": 10, "65": 11, "66": 12, "27": 0, "68": 12, "37": 2, "70": 12, "71": 15, "42": 17, "77": 71, "48": 4, "67": 12, "69": 12, "57": 4, "58": 5, "59": 6, "60": 6, "61": 6, "62": 8, "63": 9}, "filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/bootstrap3/templates/authors.tmpl"}
 __M_END_METADATA
 """
