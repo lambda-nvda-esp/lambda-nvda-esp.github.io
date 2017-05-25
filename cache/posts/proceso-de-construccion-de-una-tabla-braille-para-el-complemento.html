@@ -3,15 +3,14 @@
 <ol>
 <li>
 <p>Localizamos la tabla LambdaX.jbt en Inicio&gt;Jaws X.Y&gt;Explorar archivos de Jaws&gt;Explorar archivos de programa o en C:\Archivos de programa\Freedom Scientific\Jaws\X.Y, donde X es la versión mayor (16, 17, 18, etc.) e Y la menor (normalmente 0, pero puede variar, sobre todo para versiones anteriores a Jaws8). En esa tabla encontraremos una lista de signos como la que sigue:</p>
-<p>\1 123</p>
-<p>\2 456</p>
-<p>\3 567</p>
+<p>\1 = 123</p>
+<p>\2 = 456</p>
+<p>\3 = 567</p>
 </li>
 <li>
-<p>Tenemos que convertir los números a la izquierda de la tabla a hexadecimal, que es lo que usa Liblouis, que es el motor braille de NVDA. Para ello podemos usar el `<a href="/linked_files/dec2hex.py">script dec2hex por José Manuel Delicado</a>. Podemos ejecutar en Python:</p>
-<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">dec2hex</span>
-
-<span class="n">dec2hex</span><span class="o">.</span><span class="n">procesar</span><span class="p">(</span><span class="s2">&quot;LambdaX.jbt&quot;</span><span class="p">)</span>
+<p>Tenemos que convertir los números a la izquierda de la tabla a hexadecimal, que es lo que usa Liblouis, que es el motor braille de NVDA. Para ello podemos usar el `<a href="/linked_files/dec_to_hex.py">script dec2hex por José Manuel Delicado</a>. Podemos ejecutar en Python:</p>
+<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">dec_to_hex</span>
+<span class="n">dec_to_hex</span><span class="o">.</span><span class="n">procesar</span><span class="p">(</span><span class="s2">&quot;LambdaX.jbt&quot;</span><span class="p">)</span>
 </pre>
 
 

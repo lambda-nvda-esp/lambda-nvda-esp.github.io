@@ -16,17 +16,16 @@ Tenía en mente hacer algo como este post dese hace unos días, en inglés o esp
 
 1. Localizamos la tabla LambdaX.jbt en Inicio>Jaws X.Y>Explorar archivos de Jaws>Explorar archivos de programa o en C:\Archivos de programa\Freedom Scientific\Jaws\X.Y, donde X es la versión mayor (16, 17, 18, etc.) e Y la menor (normalmente 0, pero puede variar, sobre todo para versiones anteriores a Jaws8). En esa tabla encontraremos una lista de signos como la que sigue:
 
-	\1 123
+	\1 = 123
 
-	\2 456
+	\2 = 456
 
-	\3 567
+	\3 = 567
 
-2. Tenemos que convertir los números a la izquierda de la tabla a hexadecimal, que es lo que usa Liblouis, que es el motor braille de NVDA. Para ello podemos usar el `[script dec2hex por José Manuel Delicado](/linked_files/dec2hex.py). Podemos ejecutar en Python:
+2. Tenemos que convertir los números a la izquierda de la tabla a hexadecimal, que es lo que usa Liblouis, que es el motor braille de NVDA. Para ello podemos usar el `[script dec2hex por José Manuel Delicado](/linked_files/dec_to_hex.py). Podemos ejecutar en Python:
 
-		import dec2hex
-
-		dec2hex.procesar("LambdaX.jbt")
+		import dec_to_hex
+		dec_to_hex.procesar("LambdaX.jbt")
 
 	Esto devolverá un txt en el mismo sitio donde se ejecutó el código llamado LambdaX.txt con el mismo formato pero con números hexadecimales en lugar de decimales a la izqueirda. En ambas, lo que figura a la derecha son los patrones de puntos. En las tablas de Liblouis encontraremos un formato algo diferente: categoría símbolo/representación-hexadecimal(\X0000, por ejemplo \X001a, después de la X van cuatro caracteres, si no se llega a ese número rellenar con ceros a la izquierda, por ejemplo para el carácter anterior 1a se ponen dos ceros de forma que \X001a) patrón-puntos.
 
