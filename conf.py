@@ -134,6 +134,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+("/p/distribuidores",  "Distribuidores LAMBDA en España"),
 ("/p/about", "Sobre Nosotros"),
         ("/archive.html", "Archivo"),
         ("/rss.xml", "Canal RSS"),

@@ -5,12 +5,12 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1502358494.6532183
+_modified_time = 1502495078.1306922
 _enable_loop = True
 _template_filename = '/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/author.tmpl'
 _template_uri = 'author.tmpl'
 _source_encoding = 'utf-8'
-_exports = ['content', 'extra_head']
+_exports = ['extra_head', 'content']
 
 
 def _mako_get_namespace(context, name):
@@ -32,17 +32,17 @@ def render_body(context,**pageargs):
         __M_locals = __M_dict_builtin(pageargs=pageargs)
         _import_ns = {}
         _mako_get_namespace(context, 'feeds_translations')._populate(_import_ns, ['*'])
-        def content():
-            return render_content(context._locals(__M_locals))
-        author = _import_ns.get('author', context.get('author', UNDEFINED))
         feeds_translations = _mako_get_namespace(context, 'feeds_translations')
+        description = _import_ns.get('description', context.get('description', UNDEFINED))
+        author = _import_ns.get('author', context.get('author', UNDEFINED))
+        title = _import_ns.get('title', context.get('title', UNDEFINED))
         parent = _import_ns.get('parent', context.get('parent', UNDEFINED))
+        posts = _import_ns.get('posts', context.get('posts', UNDEFINED))
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
-        title = _import_ns.get('title', context.get('title', UNDEFINED))
         date_format = _import_ns.get('date_format', context.get('date_format', UNDEFINED))
-        description = _import_ns.get('description', context.get('description', UNDEFINED))
-        posts = _import_ns.get('posts', context.get('posts', UNDEFINED))
+        def content():
+            return render_content(context._locals(__M_locals))
         __M_writer = context.writer()
         __M_writer('\n')
         __M_writer('\n\n')
@@ -61,6 +61,27 @@ def render_body(context,**pageargs):
         context.caller_stack._pop_frame()
 
 
+def render_extra_head(context,**pageargs):
+    __M_caller = context.caller_stack._push_frame()
+    try:
+        _import_ns = {}
+        _mako_get_namespace(context, 'feeds_translations')._populate(_import_ns, ['*'])
+        author = _import_ns.get('author', context.get('author', UNDEFINED))
+        def extra_head():
+            return render_extra_head(context)
+        parent = _import_ns.get('parent', context.get('parent', UNDEFINED))
+        feeds_translations = _mako_get_namespace(context, 'feeds_translations')
+        __M_writer = context.writer()
+        __M_writer('\n    ')
+        __M_writer(str(parent.extra_head()))
+        __M_writer('\n    ')
+        __M_writer(str(feeds_translations.head(author)))
+        __M_writer('\n')
+        return ''
+    finally:
+        context.caller_stack._pop_frame()
+
+
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
@@ -68,12 +89,12 @@ def render_content(context,**pageargs):
         _mako_get_namespace(context, 'feeds_translations')._populate(_import_ns, ['*'])
         def content():
             return render_content(context)
-        author = _import_ns.get('author', context.get('author', UNDEFINED))
-        feeds_translations = _mako_get_namespace(context, 'feeds_translations')
-        title = _import_ns.get('title', context.get('title', UNDEFINED))
-        date_format = _import_ns.get('date_format', context.get('date_format', UNDEFINED))
         description = _import_ns.get('description', context.get('description', UNDEFINED))
+        author = _import_ns.get('author', context.get('author', UNDEFINED))
+        title = _import_ns.get('title', context.get('title', UNDEFINED))
         posts = _import_ns.get('posts', context.get('posts', UNDEFINED))
+        date_format = _import_ns.get('date_format', context.get('date_format', UNDEFINED))
+        feeds_translations = _mako_get_namespace(context, 'feeds_translations')
         __M_writer = context.writer()
         __M_writer('\n<article class="authorpage">\n    <header>\n        <h1>')
         __M_writer(filters.html_escape(str(title)))
@@ -106,29 +127,8 @@ def render_content(context,**pageargs):
         context.caller_stack._pop_frame()
 
 
-def render_extra_head(context,**pageargs):
-    __M_caller = context.caller_stack._push_frame()
-    try:
-        _import_ns = {}
-        _mako_get_namespace(context, 'feeds_translations')._populate(_import_ns, ['*'])
-        feeds_translations = _mako_get_namespace(context, 'feeds_translations')
-        parent = _import_ns.get('parent', context.get('parent', UNDEFINED))
-        author = _import_ns.get('author', context.get('author', UNDEFINED))
-        def extra_head():
-            return render_extra_head(context)
-        __M_writer = context.writer()
-        __M_writer('\n    ')
-        __M_writer(str(parent.extra_head()))
-        __M_writer('\n    ')
-        __M_writer(str(feeds_translations.head(author)))
-        __M_writer('\n')
-        return ''
-    finally:
-        context.caller_stack._pop_frame()
-
-
 """
 __M_BEGIN_METADATA
-{"uri": "author.tmpl", "line_map": {"64": 11, "130": 124, "23": 3, "78": 11, "79": 14, "80": 14, "81": 15, "82": 16, "83": 16, "84": 16, "85": 18, "86": 19, "87": 19, "88": 22, "89": 23, "90": 24, "91": 25, "92": 25, "29": 0, "94": 25, "95": 25, "96": 25, "97": 25, "98": 25, "99": 25, "100": 25, "101": 25, "102": 27, "103": 29, "122": 6, "109": 5, "93": 25, "47": 2, "48": 3, "53": 8, "120": 5, "121": 6, "58": 30, "123": 7, "124": 7}, "source_encoding": "utf-8", "filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/author.tmpl"}
+{"filename": "/usr/lib64/python3.4/site-packages/nikola/data/themes/base/templates/author.tmpl", "line_map": {"64": 5, "130": 124, "75": 5, "76": 6, "77": 6, "78": 7, "79": 7, "122": 25, "85": 11, "23": 3, "111": 24, "29": 0, "112": 25, "99": 11, "100": 14, "101": 14, "102": 15, "103": 16, "104": 16, "105": 16, "106": 18, "107": 19, "108": 19, "109": 22, "110": 23, "47": 2, "48": 3, "113": 25, "114": 25, "115": 25, "116": 25, "53": 8, "118": 25, "119": 25, "120": 25, "121": 25, "58": 30, "123": 27, "124": 29, "117": 25}, "source_encoding": "utf-8", "uri": "author.tmpl"}
 __M_END_METADATA
 """
