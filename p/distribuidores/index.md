@@ -14,14 +14,14 @@ En España solo existe un distribuidor a gran escala de LAMBDA. Si conoces o for
 ## Listado de distribuidores
 ### Centro de Investigación, Desarrollo y Aplicación Tiflotécnica de la Organización Nacional de ciegos Españoles (ONCE-CIDAT)
 
-Cno. de Hormigueras, 172
-28031 Madrid; Madrid, Comunidad de; Spain
-Teléfono directo/Direct phone: (+34) 917 097 600
-teléfono atención a usuarios/Users attention phone: (+34) 910 109 111 (opción 2, CIDAT).
-Fax: (+34) 917 097 777
-Email: [cidat@once.es](mailto:cidat€once.es)
-Web: <http://cidat.once.es>
-all telephone numbers above are diallable from outside Spain./Todos los números de teléfono arriba son marcables desde fuera de España.
+Cno. de Hormigueras, 172  
+28031 Madrid; Madrid, Comunidad de; Spain  
+Teléfono directo/Direct phone: (+34) 917 097 600  
+teléfono atención a usuarios/Users attention phone: (+34) 910 109 111 (opción 2, CIDAT)  
+Fax: (+34) 917 097 777  
+Email: [cidat@once.es](mailto:cidat€once.es)  
+Web: <http://cidat.once.es>  
+All telephone numbers above are diallable from outside Spain./Todos los números de teléfono arriba son marcables desde fuera de España.
 
 #### Adaptaciones de puesto de estudio
 
